@@ -91,3 +91,24 @@ const characters = [
   "?",
   "/",
 ];
+
+let password1 = document.querySelector(".password-1");
+let password2 = document.querySelector(".password-2");
+let button = document.querySelector(".button");
+let result = "";
+
+function chooseCharacter(index) {
+  for (let i = 0; i < index; i++) {
+    let randomNumber = parseInt(Math.random() * characters.length);
+    let randomCharacter = characters[randomNumber];
+    result += randomCharacter;
+  }
+  return result;
+}
+
+button.addEventListener("click", () => {
+  result = "";
+  password1.innerText = chooseCharacter(16);
+  result = "";
+  password2.innerText = chooseCharacter(16);
+});
