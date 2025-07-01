@@ -1,3 +1,88 @@
+@import url(reset.css);
+
 body {
-  margin: 0;
+  margin: 0px;
+  font-family: "Karla", sans-serif;
+}
+
+:root {
+  --blue-hue1: #111827;
+  --blue-hue2: #1f2937;
+  --blue-hue3: #374151;
+  --blue-hue4: #4b5563;
+  --blue-hue5: #6b7280;
+  --blue-hue6: #9ca3af;
+  --blue-hue7: #d1d5db;
+  --blue-hue8: #e5e7eb;
+  --blue-hue9: #f3f4f6;
+  --blue-hue10: #f9fafb;
+  --green-hue1: #064e3b;
+  --green-hue2: #065f46;
+  --green-hue3: #047857;
+  --green-hue4: #059669;
+  --green-hue5: #10b981;
+  --green-hue6: #34d399;
+  --green-hue7: #6ee7b7;
+  --green-hue8: #a7f3d0;
+  --green-hue9: #d1fae5;
+  --green-hue10: #ecfdf5;
+}
+
+.container {
+  background-color: var(--blue-hue2);
+}
+
+.content {
+  padding: 115px 52px;
+}
+
+h1 {
+  color: var(--blue-hue10);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: -1px;
+}
+
+span {
+  color: var(--green-hue6);
+}
+
+h2 {
+  color: var(--blue-hue10);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: var(--green-hue5);
+  color: white;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.line {
+  margin-top: 35px;
+  width: auto;
+  height: 1px;
+  background-color: var(--blue-hue3);
+}
+
+.passwords {
+  margin-top: 35px;
+  display: flex;
+  gap: 25px;
+}
+
+.password {
+  padding: 20px 100px;
+  background: var(--blue-hue3);
+  border-radius: 5px;
 }
