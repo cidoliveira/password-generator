@@ -92,9 +92,11 @@ const characters = [
   "/",
 ];
 
+let passwords = document.querySelectorAll(".password");
 let password1 = document.querySelector(".password-1");
 let password2 = document.querySelector(".password-2");
 let button = document.querySelector(".button");
+
 let result = "";
 
 function chooseCharacter(index) {
@@ -111,4 +113,14 @@ button.addEventListener("click", () => {
   password1.innerText = chooseCharacter(16);
   result = "";
   password2.innerText = chooseCharacter(16);
+});
+
+console.log(passwords);
+
+password1.addEventListener("click", () => {
+  navigator.clipboard.writeText(password1.innerText);
+});
+
+password2.addEventListener("click", () => {
+  navigator.clipboard.writeText(password2.innerText);
 });

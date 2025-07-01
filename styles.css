@@ -84,12 +84,13 @@ h2 {
 
 .password {
   display: flex;
-  width: 50vw;
-  height: 4vh;
+  width: 25vw;
+  height: 3.5vh;
   background: var(--blue-hue3);
   border-radius: 5px;
   font-size: 16px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  cursor: pointer;
 }
