@@ -96,6 +96,7 @@ let passwords = document.querySelectorAll(".password");
 let password1 = document.querySelector(".password-1");
 let password2 = document.querySelector(".password-2");
 let button = document.querySelector(".button");
+let modal = document.querySelector(".modal");
 
 let result = "";
 
@@ -119,8 +120,10 @@ console.log(passwords);
 
 password1.addEventListener("click", () => {
   navigator.clipboard.writeText(password1.innerText);
+  modal.classList.add("active");
 });
 
 password2.addEventListener("click", () => {
   navigator.clipboard.writeText(password2.innerText);
+  modal.classList.add("active");
 });
