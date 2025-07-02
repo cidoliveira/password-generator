@@ -180,4 +180,8 @@ a:active {
   .password {
     width: 340px;
   }
+
+  h3 {
+    bottom: 50px;
+  }
 }
