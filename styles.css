@@ -45,7 +45,7 @@ h1 {
   letter-spacing: -1px;
 }
 
-.password {
+span {
   color: var(--green-hue6);
 }
 
@@ -102,6 +102,7 @@ h2 {
   flex-wrap: wrap;
   cursor: pointer;
   position: relative;
+  color: var(--green-hue6);
 }
 
 .password:hover {
