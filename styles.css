@@ -172,3 +172,12 @@ a:hover {
 a:active {
   color: var(--green-hue4);
 }
+
+@media (max-width: 767.98px) {
+  .container {
+    padding: 60px 25px;
+  }
+  .password {
+    width: 340px;
+  }
+}
