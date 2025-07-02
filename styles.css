@@ -3,6 +3,7 @@
 body {
   margin: 0px;
   font-family: "Karla", sans-serif;
+  overflow: hidden;
 }
 
 :root {
@@ -29,10 +30,11 @@ body {
 }
 
 .container {
+  position: relative;
+
   background-color: var(--blue-hue2);
   padding: 115px 52px;
-  width: 550px;
-  height: 450px;
+  height: 720px;
   flex-shrink: 0;
 }
 
@@ -84,22 +86,28 @@ h2 {
   background-color: var(--blue-hue3);
 }
 
+.passwords-modal {
+  display: inline-flex;
+  flex-direction: column;
+}
+
 .passwords {
   margin-top: 35px;
   display: flex;
   gap: 25px;
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 
 .password {
   display: flex;
-  width: 50dvw;
+  width: 400px;
   height: 3.5vh;
   background: var(--blue-hue3);
   border-radius: 5px;
   font-size: 16px;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   cursor: pointer;
   position: relative;
   color: var(--green-hue6);
@@ -131,4 +139,36 @@ h2 {
 
 .active {
   display: flex;
+}
+
+footer {
+  color: var(--blue-hue10);
+  margin-top: 150px;
+}
+
+h3 {
+  bottom: 300px;
+  position: absolute;
+}
+
+.heart:hover {
+  color: var(--green-hue5);
+  cursor: pointer;
+}
+
+.heart:active {
+  color: var(--green-hue4);
+}
+
+a {
+  color: var(--green-hue6);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--green-hue5);
+}
+
+a:active {
+  color: var(--green-hue4);
 }
