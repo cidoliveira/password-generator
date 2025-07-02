@@ -114,6 +114,7 @@ button.addEventListener("click", () => {
   password1.innerText = chooseCharacter(16);
   result = "";
   password2.innerText = chooseCharacter(16);
+  modal.classList.remove("active");
 });
 
 console.log(passwords);

@@ -45,7 +45,7 @@ h1 {
   letter-spacing: -1px;
 }
 
-span {
+.password {
   color: var(--green-hue6);
 }
 
